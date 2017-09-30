@@ -1,0 +1,44 @@
+body{
+    background-color: cornflowerblue;
+}
+a{
+    background-color: brown;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover
+{
+    background-color: blue;
+    color: white;
+}
+
+#main
+{
+    margin-top: 20px;
+}
+
+#menu
+{
+    margin-top: 20px;
+}
+
+.stroka
+{
+    background-color: yellow;
+}
+
+table,tr,td
+{
+    border-style:solid;
+    border-color:white;
+    border-width:1px;
+}
+
+#pifagor
+{
+    text-align: center;
+    margin: 0 auto;
+}

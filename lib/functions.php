@@ -48,3 +48,18 @@ function pifagorTable($r,$c)
     }
     echo "</table>";
 }
+
+// игра в Кости
+
+function kosti()
+{
+
+    $chislo1 = rand(1,6);
+    $chislo2 = rand(1,6);
+
+    $summa = $chislo1 + $chislo2;
+
+    echo "<img src=\"img/ris".$chislo1.".gif\">";
+    echo "<img src=\"img/ris".$chislo2.".gif\">";
+    echo "<br>Вам выпало ".$summa;
+}

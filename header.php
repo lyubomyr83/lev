@@ -13,7 +13,7 @@
 ?>
 <div class="row logo">
     <div class="col-md-2"><img src="img/logo.png"></div>
-    <div class="col-md-9"><h1>LEV PROJECT</h1></div>
+    <div class="col-md-9"><h1>LEV PROJECTS</h1></div>
 </div>
 <div class="row">
     <div class="col-md-12"></div>
@@ -25,5 +25,5 @@
         require_once "menu.php";
         ?>
     </div>
-    <div class="col-md-9">
+    <div class="col-md-9 content">
 

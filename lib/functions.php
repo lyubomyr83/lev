@@ -61,5 +61,5 @@ function kosti()
 
     echo "<img src=\"img/ris".$chislo1.".gif\">";
     echo "<img src=\"img/ris".$chislo2.".gif\">";
-    echo "<br>Вам выпало ".$summa;
+    echo "<div class=\"kosti_header\">Вам выпало ".$summa."</div>";
 }

@@ -13,3 +13,4 @@ $Autos['Ford']['Кузов']='Кабриолет';
 echo 'Цвет Audi '.$Autos['Audi']['Цвет'];
 echo "<br>";
 echo $Autos['Ford']['Кузов'];
+

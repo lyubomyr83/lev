@@ -3,9 +3,15 @@
 require_once "header.php";
 ?>
 <h2>Игра в кости</h2>
-
+<div class="row">
+    <div class="col-md-5 kosti">
+        <?php
+        kosti();
+        ?>
+        <br><input type="button" value="Бросить кости" onClick="document.location.reload(true)">
+    </div>
+    <div class="col-md-7">
+    </div>
 <?php
-kosti();
-echo "<br><input type=\"button\" value=\"Бросить кости\" onClick=\"document.location.reload(true)\">";
 require_once "footer.php";
 ?>

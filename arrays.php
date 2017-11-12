@@ -13,4 +13,8 @@ $Autos['Ford']['Кузов']='Кабриолет';
 echo 'Цвет Audi '.$Autos['Audi']['Цвет'];
 echo "<br>";
 echo $Autos['Ford']['Кузов'];
-
+echo '<br>';
+for($i=1;$i<=10;$i++)
+{
+echo 'Привет';
+}

@@ -63,3 +63,25 @@ function kosti()
     echo "<img src=\"img/ris".$chislo2.".gif\">";
     echo "<div class=\"kosti_header\">Вам выпало ".$summa."</div>";
 }
+
+// авторизация
+
+function autorisation($l,$p)
+{
+    $valid_users[] = array("login"=>"admin","password"=>"A123");
+    $valid_users[] = array("login"=>"root","password"=>123);
+
+    foreach ($valid_users as $value)
+    {
+        if($l == $value['login'] && $p == $value['password'])
+        {
+            echo "<h3><span class=\"label label-success\">Добро пожаловать, ".$l."</span></h3>";
+            $autorisationok = TRUE;
+        }
+    }
+
+    if($_POST && !$autorisationok)
+    {
+        echo "<h3><span class=\"label label-danger\">Ошибка авторизации</span></h3>";
+    }
+}

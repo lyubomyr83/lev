@@ -8,8 +8,19 @@
 
 <body>
 <?php
-    // подключим библиотеку с функциями
-    require_once "lib/functions.php";
+
+// автозагрузка классов
+function __autoload($name)
+{
+    require_once('classes/' . $name . '.php');
+}
+
+// подключим библиотеку с функциями
+require_once "lib/functions.php";
+
+// подключаемся к Базе данных
+$connect_to_db = new Db();
+
 ?>
 <div class="row logo">
     <div class="col-md-2"><img src="img/logo.png"></div>

@@ -26,9 +26,13 @@ class Db extends Config
 		{
             die("Ошибка соединения с базой данных: ". mysqli_error());
         }
-        echo "Подключились к БД";
+        else{
+            echo "Соединились с БД";
+        }
+
         // установка принудительной кодировки UTF-8
         mysqli_query($this->connection, "set names utf8") or die ("set names utf8 failed");
+
     }
 
     // реализация запроса к БД
@@ -43,11 +47,6 @@ class Db extends Config
         }
         return $result;
     }
-	
-	// закрываем соединение с сервером БД
-	public function  __destruct()
-	{
-	    mysqli_close($this->connection);
-	}
+
 }
 ?>

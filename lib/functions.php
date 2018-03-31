@@ -1,18 +1,4 @@
 <?php
-
-// припев
-function pripev ()
-{
-    echo "<br>припева нет, припева нет,<br>Припева нет, припева нет.<br>";
-}
-
-// сложение двух чисел
-function sum ($x,$y)
-{
-    $summa = $x+$y;
-    echo "Разность чисел ".$x." и ".$y." равна ".$summa;
-}
-
 function pifagorTable($r,$c)
 {
 

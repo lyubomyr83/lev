@@ -1,15 +1,19 @@
 <?php
-// автозагрузка классов
-function __autoload($name)
-{
-    // конвертируем полный путь в пространстве имён с \ в /
-    $name = str_replace('\\', '/', $name);
+require_once "config/ini.php";
 
-    require_once($name.'.php');
-}
 
 require_once "header.php";
-
-echo "Главная страница";
+if(!$_POST)
+{
+    require_once "views/Vlogin.php";
+}
+else
+{
+    if ($_POST['autorisation'])
+    {
+        $isloged = new \app\classes\Clogin();
+        $isloged->getAutorisation($_POST['login'],$_POST['pass']);
+    }
+}
 
 require_once "footer.php";

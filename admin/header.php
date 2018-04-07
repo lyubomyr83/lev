@@ -1,6 +1,3 @@
-<?php
-namespace app\classes;
-?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -10,23 +7,10 @@ namespace app\classes;
 </head>
 
 <body>
-<?php
 
-
-// подключим библиотеку с функциями
-require_once "../lib/functions.php";
-
-
-
-?>
 <div class="row logo">
     <div class="col-md-2"><img src="../img/logo.png"></div>
-    <div class="col-md-9"><h1>LEV PROJECT</h1></div>
-
-    <?php
-    // подключаемся к Базе данных
-    $myconn = \app\classes\Db::getInstance();
-    ?>
+    <div class="col-md-9"><h1>LEV PROJECT ADMIN</h1></div>
 
 </div>
 <div class="row">
@@ -36,7 +20,7 @@ require_once "../lib/functions.php";
     <div class="col-md-2 menu">
         <?php
         // подключим меню
-        require_once "menu.php";
+        require_once "views/Vmenu.php";
         ?>
     </div>
     <div class="col-md-9">

@@ -1,4 +1,5 @@
+    <div id="footer">
+        Копирайт
     </div>
-</div>
 </body>
 </html>

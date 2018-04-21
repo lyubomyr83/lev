@@ -7,7 +7,7 @@ function pifagorTable($r,$c)
     $rows = $r;
     $cols = $c;
 
-    echo "<table>";
+    echo "<br><br><table>";
 
     for ($i = 1; $i <= $rows; $i++) {
         echo "<tr>\n";

@@ -17,7 +17,7 @@
     <div class="col-md-12"></div>
 </div>
 <div class="row">
-    <div class="col-md-2 menu">
+    <div id="menu" class="col-md-2">
         <?php
 
         // сформируем меню
@@ -28,5 +28,7 @@
     </div>
     <div class="col-md-9">
         <?php
-require_once "views/VContent.php";
-
+            require_once "views/VContent.php";
+        ?>
+    </div>
+</div>

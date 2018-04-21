@@ -1,7 +1,18 @@
-body{
-    background-color: cornflowerblue;
+html
+{
+    position: relative;
+    min-height: 100%;
 }
-a{
+
+body
+{
+    background: url("../img/199.jpg");
+    color: whitesmoke;
+    margin-bottom: 60px;
+}
+
+a
+{
     background-color: brown;
     padding: 10px;
     margin-right: 10px;
@@ -19,26 +30,39 @@ a:hover
     margin-top: 20px;
 }
 
-.logo img{
+.logo img
+{
     height: 100px;
     margin: 10px;
 }
 
-.logo h1{
+.logo h1
+{
     margin-top: 30px;
     text-align: center;
 }
 
-.menu
+#menu
 {
     margin: 10px;
+}
 
+#menu a
+{
+    background-color: #4060A0;
+    margin-bottom: 10px;
+}
 
+#menu a:hover
+{
+    background: url("../img/198.png");
+    padding-left: 40px;
+    transition-duration: 1s;
 }
 
 .stroka
 {
-    background-color: yellow;
+    background-color: olivedrab;
 }
 
 table,tr,td
@@ -47,6 +71,8 @@ table,tr,td
     border-color:white;
     border-width:1px;
     padding: 5px;
+    color: whitesmoke;
+    background-color: blue;
 }
 
 #pifagor
@@ -70,7 +96,7 @@ input
 }
 
 input:hover{
-    background-color: white;
+
 }
 
 .kosti{
@@ -88,4 +114,23 @@ input:hover{
     font-style: italic;
     font-size: large;
 
+}
+
+
+body {
+    /* Margin bottom by footer height */
+
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background: url("../img/198.png");
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
 }

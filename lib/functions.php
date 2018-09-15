@@ -49,4 +49,22 @@ function kosti()
     echo "<img src=\"img/ris".$chislo1.".gif\">";
     echo "<img src=\"img/ris".$chislo2.".gif\">";
     echo "<div class=\"kosti_header\">Вам выпало ".$summa."</div>";
+
+}
+
+// проверка числа
+
+function proverka($chislo)
+{
+    if($chislo<100){
+        echo $chislo . " меньше 100";
+    }
+    elseif($chislo == 100)
+    {
+        echo $chislo." равно 100";
+    }elseif($chislo>100)
+    {
+        echo $chislo." больше 100";
+    }
+
 }

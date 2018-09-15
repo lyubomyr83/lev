@@ -15,6 +15,7 @@ require_once "lib/functions.php";
 // создадим объекты
 $sidemenu = new \app\classes\CMenu(); // для работы с меню
 $getcontent = new app\classes\CContent(); // для работы с контентом страниц
+$getgallery = new app\classes\CGallery(); // для работы с галереями
 
 
 // получим массив с контентом

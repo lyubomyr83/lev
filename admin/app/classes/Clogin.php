@@ -13,6 +13,7 @@ class Clogin extends Mlogin
         if($pass == $pass_from_db)
         {
             echo "Добро пожаловать ".$row['name'];
+            $_SESSION['loged'] = 'loged';
         }
         else
         {

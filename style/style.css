@@ -57,6 +57,7 @@ a:hover
 {
     background: url("../img/198.png");
     padding-left: 40px;
+    margin-left: 40px;
     transition-duration: 1s;
 }
 

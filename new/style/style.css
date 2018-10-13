@@ -7,12 +7,13 @@ body
 
 a
 {
-    background-color: cornsilk;
+    background-color: black;
     padding: 10px;
     display: block;
     width: 150px;
     text-decoration: none;
     border-radius: 20px;
+    color: white;
 }
 
 a:hover
